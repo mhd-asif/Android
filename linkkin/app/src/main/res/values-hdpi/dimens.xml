@@ -1,0 +1,26 @@
+<resources>
+
+    <!--Sliding menu -->
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">20dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="map_dot_marker_size">45dp</dimen>
+    <dimen name="left_right_size">37dp</dimen>
+
+    <dimen name="list_image_size">100dp</dimen>
+    <dimen name="list_small_image_size">30dp</dimen>
+
+    <dimen name="back_image_size">24dp</dimen>
+    <dimen name="left_menu_list_image_size">42dp</dimen>
+    <dimen name="login_page_logo_size">56dp</dimen>
+    <dimen name="login_page_text_size">13sp</dimen>
+    <dimen name="actionBar_linkkin_icon_size">36dp</dimen>
+
+    <dimen name="kindividual_tag_text_size">12sp</dimen>
+    <dimen name="kindividual_tag_value_text_size">17sp</dimen>
+
+</resources>

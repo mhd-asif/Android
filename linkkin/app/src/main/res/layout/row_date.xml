@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ripple:rv_type="rectangle"
+    ripple:rv_rippleDuration="100">
+
+    <TextView
+        android:id="@+id/txtSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D5D5D5"/>
+
+    <LinearLayout
+        android:id="@+id/linearEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Date"
+            android:textColor="#A3A3A3"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/txtEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:text="NASA goes to Mars: Astronauts could lend on Red Planet by 2039. There might happen anything....."
+            android:textColor="#555555"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</com.andexert.library.RippleView>

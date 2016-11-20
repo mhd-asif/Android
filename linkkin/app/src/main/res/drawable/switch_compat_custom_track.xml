@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="8dp"></corners>
+    <solid android:color="#21A7AB" />
+    <stroke
+        android:width="4dp"
+        android:color="@android:color/transparent" />
+    <size android:height="25dp" />
+</shape>
+    -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/on_back" android:state_checked="true" />
+    <item android:drawable="@drawable/off_back" />
+</selector>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/expandable_list_item_view_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_margin="1dp"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/expandable_list_item_view_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:textColor="#666"
+        android:text="test"
+        android:background="#fff" />
+
+    <View
+        android:id="@+id/expandable_list_item_view_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"/>
+<!--    <WebView
+        android:id="@+id/webview_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandable_list_item_view_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></WebView>-->
+</RelativeLayout>

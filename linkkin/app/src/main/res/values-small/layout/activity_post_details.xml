@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/custom_toolbar"
+        style="@style/custom_AppTheme.Toolbar"
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bg_left_menu"
+        android:elevation="4dp">
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            ripple:rv_type="rectangle"
+            ripple:rv_centered="true"
+            ripple:rv_rippleDuration="100"
+            ripple:rv_color="#ffffff"
+            android:id="@+id/view3">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/actionBar_linkkin_icon_size"
+                android:layout_height="@dimen/actionBar_linkkin_icon_size"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/back_new"
+                android:tint="#fff" />
+        </com.andexert.library.RippleView>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_action_bar_linkin"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tool_bar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:lines="1"
+            android:text="Kinteract"
+            android:textColor="#ffffff"
+            android:textStyle="normal"
+            android:layout_toRightOf="@+id/view3"
+            android:layout_toEndOf="@+id/view3"
+            android:layout_centerVertical="true" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Category-1"
+                    android:textColor="#9E9E9E"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/txtCategory" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="September 4, 2015"
+                        android:textColor="#9E9E9E"
+                        android:layout_marginRight="3dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/txtDate"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="#9E9E9E"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:id="@+id/textView58"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|center_vertical"
+                        android:text="Gazipur, Dhaka"
+                        android:textColor="#9E9E9E"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/txtLocation"
+                        android:layout_gravity="center_vertical" />
+
+
+                </LinearLayout>
+
+                <us.feras.mdv.MarkdownView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:id="@+id/webView" />
+
+                <HorizontalScrollView
+                    android:id="@+id/imgScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/linearScroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeCommentHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/comment_color"
+                        android:scaleType="fitXY"
+                        android:padding="7dp"
+                        android:id="@+id/imgCommentHeader"
+                        android:layout_gravity="right"
+                        android:layout_toLeftOf="@+id/txtCommentHeader"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="2 Comments"
+                        android:gravity="left|center_vertical"
+                        android:visibility="visible"
+                        android:textColor="#8D8D8D"
+                        android:id="@+id/txtCommentHeader"
+                        android:layout_gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearComments"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    >
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearCommentPost"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textMultiLine"
+                            android:ems="10"
+                            android:hint="Write a comment..."
+                            android:padding="7dp"
+                            android:background="#ffffff"
+                            android:id="@+id/edtComment" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+
+                        <com.andexert.library.RippleView
+                            xmlns:ripple="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp"
+                            android:background="#00000000"
+                            ripple:rv_type="simpleRipple"
+                            ripple:rv_rippleDuration="100">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/comment_send"
+                                android:scaleType="fitXY"
+                                android:id="@+id/imgComment" />
+
+                        </com.andexert.library.RippleView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

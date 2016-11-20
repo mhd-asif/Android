@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/tools"
+    android:id="@android:id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_left_menu_dark"
+    android:paddingTop="?attr/actionBarSize">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerLeft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:background="#00000000"
+        android:scrollbars="vertical"
+        android:scrollbarSize="3dp"
+        android:scrollbarThumbVertical="@color/off_state"
+        android:scrollbarTrackVertical="@color/transparent"
+        android:fadeScrollbars="true"
+        android:scrollbarFadeDuration="500">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/imgArrow"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:padding="10dp"
+        android:tint="#FFFFFF"
+        android:src="@drawable/arrow_right"
+        android:layout_alignBottom="@+id/recyclerLeft"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/bg_left_menu"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile_img"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/ic_linkin_launcher"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/ripple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:rv_centered="true"
+            app:rv_color="@color/primary_color_dark"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Log out"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </com.andexert.library.RippleView>
+
+        <TextView
+            android:id="@+id/tv_user_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/ripple"
+            android:layout_toRightOf="@+id/iv_profile_img"
+            android:layout_toStartOf="@+id/ripple"
+            android:text="Full Name"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

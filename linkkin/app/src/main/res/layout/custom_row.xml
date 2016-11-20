@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearRoot"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp">
+
+        <FrameLayout
+            android:id="@+id/frameMain"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/progressMain" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgMain"
+                android:scaleType="fitXY" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".22">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="20 MINUTES AGO"
+                    android:textSize="12sp"
+                    android:id="@+id/txtTime" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".53"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:lines="1"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="2dp"
+                    android:id="@+id/txtHeader" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:text="New Text"
+                    android:id="@+id/txtData" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"
+                android:layout_marginTop="5dp">
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:id="@+id/horizontalScrollView">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <FrameLayout
+                            android:id="@+id/frame1"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp">
+
+                            <ProgressBar
+                                style="?android:attr/progressBarStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/progress1" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/img1"
+                                android:scaleType="fitXY"
+                                />
+
+                        </FrameLayout>
+
+
+                        <FrameLayout
+                            android:id="@+id/frame2"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp">
+
+                            <ProgressBar
+                                style="?android:attr/progressBarStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/progress2" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/img2"
+                                android:scaleType="fitXY"
+                                />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frame3"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp">
+
+                            <ProgressBar
+                                style="?android:attr/progressBarStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/progress3" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/img3"
+                                android:scaleType="fitXY"
+                                />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frame4"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp">
+
+                            <ProgressBar
+                                style="?android:attr/progressBarStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/progress4" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/img4"
+                                android:scaleType="fitXY"
+                                />
+
+                        </FrameLayout>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imgYoutube"
+                            android:src="@drawable/youtube"
+                            android:layout_marginRight="3dp"
+                            android:scaleType="fitXY"
+                            />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imgTv"
+                            android:src="@drawable/tv"
+                            android:scaleType="fitXY"
+                            android:layout_marginRight="10dp"
+                            />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#10000000"/>
+
+
+</LinearLayout>

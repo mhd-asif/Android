@@ -1,0 +1,3 @@
+img { max-width: 100%; display: block; height: auto; }
+h1,h2,h3 { font-family: "" ; src: url('file:///android_asset/css/font/ProximaNova-Regular.otf'); font-size: 18px; font-weight: bold; color: #666666; }
+p { font-family: "" ; src: url('file:///android_asset/css/font/ProximaNova-Regular.otf'); font-size: 15px; color: #888888; }

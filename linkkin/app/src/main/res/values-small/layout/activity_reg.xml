@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/relativeRoot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="@dimen/login_page_logo_size"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/linkin_logo"/>
+
+                <TextView
+                    android:id="@+id/tv_active_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="To activate an account use your\nEmployee code &amp; Password"
+                    android:textColor="#eee"
+                    android:textSize="@dimen/login_page_text_size"
+                    android:textStyle="normal"
+                    android:textAllCaps="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_active_text"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearEmployee"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp">
+
+                        <EditText
+                            android:id="@+id/et_employee_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Employee code"
+                            android:textCursorDrawable="@drawable/cursor_drawable"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="#fff"
+                            android:textColorHint="#ccc"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:background="#00000000" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ccc"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearPassword"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="80dp"
+                        android:layout_marginTop="20dp">
+
+                        <EditText
+                            android:id="@+id/edtPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:hint="Password"
+                            android:textCursorDrawable="@drawable/cursor_drawable"
+                            android:imeOptions="actionGo"
+                            android:inputType="numberDecimal"
+                            android:singleLine="true"
+                            android:textColor="#fff"
+                            android:textColorHint="#ccc"
+                            android:textSize="20sp"
+                            android:background="#00000000"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ccc"/>
+
+                    </LinearLayout>
+
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:minWidth="120dp"
+                        ripple:rv_centered="false"
+                        ripple:rv_color="#ffffff"
+                        ripple:rv_type="rectangle"
+                        ripple:rv_rippleDuration="100"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/ripple">
+
+                        <TextView
+                            android:id="@+id/btn_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:minWidth="120dp"
+                            android:text="Next"
+                            android:textColor="#ffffff"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:gravity="center"/>
+                    </com.andexert.library.RippleView>
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bscheme.linkkin.KindividualFullProfileActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_vertical"
+        android:id="@+id/linearLayout5"
+        android:layout_below="@+id/custom_toolbar"
+        android:background="@color/bg_left_menu"
+        android:padding="5dp">
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_gravity="center_vertical"
+            ripple:rv_type="rectangle"
+            ripple:rv_centered="true"
+            ripple:rv_rippleDuration="100"
+            ripple:rv_color="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/view2"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/actionBar_linkkin_icon_size"
+                android:layout_height="@dimen/actionBar_linkkin_icon_size"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/back_new"
+                android:tint="#ffffff" />
+
+        </com.andexert.library.RippleView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_above="@+id/tv_user_full_name"
+            android:src="@drawable/ic_linkin_launcher"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="3dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/tv_user_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="1dp"
+                android:text="Full name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designation"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#99ffffff"
+                android:textIsSelectable="false"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:paddingLeft="1dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--
+    <FrameLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_left_menu"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></FrameLayout>   -->
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="true"
+        app:pstsActivateTextColor="#FFFFFF"
+        app:pstsDeactivateTextColor="#007F80"
+        app:pstsIndicatorColor="#2DB7BC"
+        app:pstsIndicatorHeight="1dp"
+        app:pstsDividerColor="#27A0A4"
+        android:background="@color/bg_left_menu"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="48dp">
+    </com.astuetz.PagerSlidingTabStrip>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs" />
+
+</RelativeLayout>

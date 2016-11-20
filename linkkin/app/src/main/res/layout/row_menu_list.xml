@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ripple:rv_type="rectangle"
+    ripple:rv_rippleDuration="100">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/row_icon"
+            android:layout_width="@dimen/left_menu_list_image_size"
+            android:layout_height="@dimen/left_menu_list_image_size"
+            android:layout_gravity="center_vertical"
+            android:background="#00000000"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_linkin_launcher"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/row_title"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Menu item"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/row_icon"
+            android:layout_alignParentTop="false"
+            android:layout_toEndOf="@+id/row_icon"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+</com.andexert.library.RippleView>

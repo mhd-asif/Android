@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.bscheme.linkkin"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 11
+        versionName '1.1.1'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'border'
+    }
+
+    productFlavors {
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res/values-small']
+            resources.srcDirs = ['src/main/resources', 'src/main/resources/adapter']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:cardview-v7:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.google.android.gms:play-services-maps:7.8.0'
+    compile 'com.google.android.gms:play-services-gcm:7.8.0'
+    compile files('libs/apache-httpcomponents-httpclient.jar')
+    compile files('libs/apache-httpcomponents-httpcore.jar')
+    compile files('libs/apache-httpcomponents-httpmime.jar')
+    compile files('libs/picasso-2.2.0.jar')
+    compile project(':RippleEffect')
+    compile project(':supertooltips')
+    compile project(':circleimageview')
+    compile project(':markdownView')
+    //compile project(':SmartTabLayout')
+    compile project(':utils-v4')
+    compile project(':FlexibleCalendar')
+    compile project(':sweet alert dialog')
+    compile project(':PagerSlidingTabStript')
+    //compile project(':MaterialDateandTimePicker')
+    compile project(':SlidingMenu_new')
+}

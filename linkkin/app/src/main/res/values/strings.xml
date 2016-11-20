@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">linkkin</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_reg">Registration</string>
+
+    <string name="title_activity_confirm_reg">Confirm Registration</string>
+    <string name="preference_file_key">linkkin_shared_key</string>
+    <string name="shared_pref_user_id">user id</string>
+    <string name="shared_pref_employee_id">employee id</string>
+    <string name="shared_pref_employee_name">employee name</string>
+    <string name="shared_pref_password">password</string>
+    <string name="shared_pref_lock_pin">lock pin</string>
+    <string name="shared_pref_previous_emp_id">user id</string>
+    <string name="shared_pref_web_id">web id</string>
+    <string name="shared_pref_api_url">api url</string>
+
+    <string name="title_activity_kindividual_full_profile">Full Profile</string>
+
+    <string name="on_text">ON</string>
+    <string name="off_text">OFF</string>
+
+    <string name="offline_directory">offline</string>
+    <string name="file_kindom">offline/kindom_data</string>
+    <string name="file_kindividual">offline/kindividual_data</string>
+    <string name="file_kinformation_cat">offline/kinformation_cat_data</string>
+    <string name="file_kintertainment_cat">offline/kintertainment_cat_data</string>
+    <string name="file_kincoming">offline/kincoming</string>
+    <string name="file_kinteract">offline/kinteract_data</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_change_pin">ChangePIN</string>
+
+</resources>

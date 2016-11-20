@@ -1,0 +1,1 @@
+include ':app', ':FlexibleCalendar', ':markdownView', ':RippleEffect', ':SlidingMenu', ':SmartTabLayout', ':supertooltips', ':sweet alert dialog', ':utils-v4', ':PagerSlidingTabStript', ':MaterialDateandTimePicker', ':circleimageview', ':SlidingMenu_new'

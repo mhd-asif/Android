@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+
+            <LinearLayout
+                android:id="@+id/linearHospital"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_hospital">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hospital_48"
+                        android:background="@drawable/back_circle_blank"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="HOSPITAL"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:textSize="11sp"
+                    android:id="@+id/textView44"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRestaurant"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_restaurant">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/restaurant_48"
+                        android:background="@drawable/back_circle_blank"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="RESTAURANT"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:textSize="11sp"
+                    android:id="@+id/textView45"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearPolice"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_police">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/police_station_48"
+                        android:background="@drawable/back_circle_blank"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="POLICE STATION"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:textSize="11sp"
+                    android:id="@+id/textView46"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+
+            <LinearLayout
+                android:id="@+id/linearGrocery"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_grocery">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/grocery_48"
+                        android:background="@drawable/back_circle_blank"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="GROCERY"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:textSize="11sp"
+                    android:id="@+id/textView47"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearPrimary"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_primary">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/school_48"
+                        android:background="@drawable/back_circle_blank"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="PRIMARY SCHOOL"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:textSize="11sp"
+                    android:id="@+id/textView48"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearUniversity"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_university">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/university_48"
+                        android:background="@drawable/back_circle_blank"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="UNIVERSITY"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:textSize="11sp"
+                    android:id="@+id/textView49"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+
+            <LinearLayout
+                android:id="@+id/linearLanundry"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_laundry">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/laundry_48"
+                        android:background="@drawable/back_circle_blank"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="LAUNDRY"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:textSize="11sp"
+                    android:id="@+id/textView50" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearBarber"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_barbar">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/barber_shop_48"
+                        android:background="@drawable/back_circle_blank"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="BARBER SHOP"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:textSize="11sp"
+                    android:id="@+id/textView51" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearDone"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#C4C4C4"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="DONE"
+            android:textColor="#2DB7BC"
+            android:id="@+id/textView43"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.bscheme.linkkin.left_menu_fragment.ContainerFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="#FAFAFA">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:src="@drawable/add"
+            app:fabSize="normal"
+            app:backgroundTint="#0B8081"
+            app:rippleColor="#A4CDFF"
+            app:layout_anchor="@id/recyclerContainer"
+            app:layout_anchorGravity="bottom|right|end"/>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

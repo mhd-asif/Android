@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        minSdkVersion 9
+    }
+    sourceSets { main { java.srcDirs = ['src/main/java', 'src/main/java/animator'] } }
+}
+
+dependencies {
+    //    compile 'com.pnikosis:materialish-progress:1.2'
+    compile 'com.android.support:support-v4:22.2.0'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:23.0.0'
+}
+
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@color/primary_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/relativeRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/linkin_logo"
+        android:maxWidth="64dp"
+        android:maxHeight="64dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textSize="20sp"
+                android:text="You're inactive for more than 5 minutes. Confirm your secret pin to login"
+                android:id="@+id/txtDesc"
+                android:layout_below="@+id/imageView4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearEdits"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/txtDesc">
+
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textColorHint="#ccc"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="#00000000"
+            android:inputType="textPassword"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"/>
+
+                <EditText
+                    android:id="@+id/edtPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Secret Pin"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#ccc"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="#00000000"
+                    android:inputType="numberDecimal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc"/>
+
+                <EditText
+                    android:id="@+id/edtConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Confirm Secret Pin"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#ccc"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="#00000000"
+                    android:inputType="numberDecimal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc"/>
+
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearOk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="#00000000"
+                    android:minWidth="120dp"
+                    ripple:rv_centered="false"
+                    ripple:rv_color="#ffffff"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_rippleDuration="100"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/mRipple">
+
+                    <TextView
+                        android:id="@+id/txtOk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:minWidth="120dp"
+                        android:text="Ok"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:gravity="center"/>
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
