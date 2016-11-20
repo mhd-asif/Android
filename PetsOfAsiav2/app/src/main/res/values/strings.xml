@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pets of Asia</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_log_in">Log In</string>
+    <string name="title_activity_forgot_password">Forgot Password</string>
+    <string name="title_activity_create_account">Create Account</string>
+    <string name="pets_for_adoption">Pets For Adoption</string>
+    <string name="title_activity_pets_for_adoption">PetsForAdoption</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_services_offered">Services Offered</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

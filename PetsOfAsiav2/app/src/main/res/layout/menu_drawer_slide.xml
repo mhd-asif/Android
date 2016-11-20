@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ActivityMain">
+
+    <!--Action Bar Logo-->
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/action_bar_logo_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sidebar_title_logo"
+        android:paddingBottom="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/sidebar_title_logo"
+        android:background="#FF1fa99e"/>
+
+
+    <ScrollView
+        android:layout_below="@id/sidebar_title_logo"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <!--Menu Items Start-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <!--My Favourites-->
+            <LinearLayout
+                android:onClick="clickedItemMyFavourite"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="40dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/my_favourites"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/ionicons"
+                    android:id="@+id/txt_my_favourite"
+                    android:paddingLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Favourites:"
+                    android:textColor="#939393" />
+            </LinearLayout>
+
+
+
+            <!--Pets-->
+            <TextView
+                style="@style/ionicons"
+                android:onClick="clickedItemPets"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="90dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pets"
+                />
+
+            <!--Services-->
+            <TextView
+                android:id="@+id/sidebar_services"
+                android:onClick="clickedItemServices"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="90dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"/>
+
+            <!--Profile-->
+            <LinearLayout
+                android:onClick="clickedItemProfile"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/profile"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="#939393" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"/>
+
+        <!-- blank item -->
+        <LinearLayout
+            android:onClick="clickedItemSupport"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+        </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"/>
+
+            <!--Support-->
+            <LinearLayout
+                android:onClick="clickedItemSupport"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/support"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Support"
+                    android:textColor="#939393" />
+            </LinearLayout>
+
+            <!--Terms & Conditions-->
+            <TextView
+                android:onClick="clickedItemTermsAndConditions"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="90dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms &amp; Conditions"
+                />
+
+            <!--Privacy Policy-->
+            <TextView
+                android:onClick="clickedItemPrivacyPolicy"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="90dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"/>
+
+            <!--About This App-->
+            <LinearLayout
+                android:onClick="clickedItemAboutThisApp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/about"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textColor="#939393" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"/>
+
+            <!--Rate This App-->
+            <LinearLayout
+                android:onClick="clickedItemRateThisApp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/rate"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate this App"
+                    android:textColor="#939393" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"/>
+
+            <!--Log Out-->
+            <LinearLayout
+                android:onClick="clickedItemLogOut"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/logout"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log Out"
+                    android:textColor="#939393" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--Menu Items End-->
+    </ScrollView>
+
+
+</RelativeLayout>

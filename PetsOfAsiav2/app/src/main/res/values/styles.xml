@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/ionicons</item>
+        <item name="android:buttonStyle">@style/ionicons</item>
+        <item name="android:editTextStyle">@style/ionicons</item>
+        <item name="android:hint">@style/ionicons</item>
+    </style>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ionicons" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/blogger_sans-medium.otf</item>
+    </style>
+</resources>

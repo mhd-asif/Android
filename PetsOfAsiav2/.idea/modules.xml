@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PetsOfAsiav2.iml" filepath="$PROJECT_DIR$/PetsOfAsiav2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlidingMenu/SlidingMenu.iml" filepath="$PROJECT_DIR$/SlidingMenu/SlidingMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calligraphy-2.1.0/calligraphy-2.1.0.iml" filepath="$PROJECT_DIR$/calligraphy-2.1.0/calligraphy-2.1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materialdrawer-4.6.3/materialdrawer-4.6.3.iml" filepath="$PROJECT_DIR$/materialdrawer-4.6.3/materialdrawer-4.6.3.iml" />
+    </modules>
+  </component>
+</project>
