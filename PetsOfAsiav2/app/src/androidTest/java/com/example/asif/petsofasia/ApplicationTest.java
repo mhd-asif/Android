@@ -1,4 +1,4 @@
-package com.example.saddam.petsofasiav2;
+package com.example.asif.petsofasia;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

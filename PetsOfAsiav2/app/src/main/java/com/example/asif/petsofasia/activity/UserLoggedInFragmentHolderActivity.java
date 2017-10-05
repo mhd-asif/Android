@@ -1,9 +1,10 @@
-package com.example.saddam.petsofasiav2.activity;
+package com.example.asif.petsofasia.activity;
 
 import android.os.Bundle;
-import com.example.saddam.petsofasiav2.R;
-import com.example.saddam.petsofasiav2.fragment.PetsFragment;
-import com.example.saddam.petsofasiav2.template.SlidingMenuTemplate;
+
+import com.example.asif.petsofasia.R;
+import com.example.asif.petsofasia.fragment.PetsFragment;
+import com.example.asif.petsofasia.template.SlidingMenuTemplate;
 
 public class UserLoggedInFragmentHolderActivity extends SlidingMenuTemplate
 {
@@ -12,7 +13,8 @@ public class UserLoggedInFragmentHolderActivity extends SlidingMenuTemplate
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_logged_in_fragment_holder);
+
         //Set starting fragment to show
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_place, new PetsFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new PetsFragment()).commit();
     }
 }

@@ -1,23 +1,20 @@
-package com.example.saddam.petsofasiav2.template;
+package com.example.asif.petsofasia.template;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
-import com.example.saddam.petsofasiav2.R;
-import com.example.saddam.petsofasiav2.fragment.AboutUsFragment;
-import com.example.saddam.petsofasiav2.fragment.PetsFragment;
-import com.example.saddam.petsofasiav2.fragment.PrivacyPolicyFragment;
-import com.example.saddam.petsofasiav2.fragment.ProfileFragment;
-import com.example.saddam.petsofasiav2.fragment.ServicesFragment;
-import com.example.saddam.petsofasiav2.fragment.TermsAndConditionsFragment;
+
+import com.example.asif.petsofasia.R;
+import com.example.asif.petsofasia.fragment.AboutUsFragment;
+import com.example.asif.petsofasia.fragment.PetsFragment;
+import com.example.asif.petsofasia.fragment.PrivacyPolicyFragment;
+import com.example.asif.petsofasia.fragment.ProfileFragment;
+import com.example.asif.petsofasia.fragment.ServicesFragment;
+import com.example.asif.petsofasia.fragment.TermsAndConditionsFragment;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivity;
 
 public class SlidingMenuTemplate  extends SlidingActivity
 {
-    String[] mobileArray = {"Android","IPhone","WindowsMobile","Blackberry","WebOS","Ubuntu","Windows7","Max OS X"};
-
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -33,7 +30,7 @@ public class SlidingMenuTemplate  extends SlidingActivity
         getSlidingMenu().setBehindOffset(100);
     }
 
-    /*Fragments*/
+    /******************************************* Fragments *****************************************/
     public void clickedItemMyFavourite(View view)
     {
         /*if(getSlidingMenu().isMenuShowing())
@@ -46,7 +43,7 @@ public class SlidingMenuTemplate  extends SlidingActivity
         if(getSlidingMenu().isMenuShowing())
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "Pets", Toast.LENGTH_LONG).show();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_place, new PetsFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new PetsFragment()).commit();
     }
 
     public void clickedItemServices(View view)
@@ -54,7 +51,7 @@ public class SlidingMenuTemplate  extends SlidingActivity
         if(getSlidingMenu().isMenuShowing())
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "Services", Toast.LENGTH_LONG).show();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_place, new ServicesFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new ServicesFragment()).commit();
     }
 
     public void clickedItemProfile(View view)
@@ -63,7 +60,7 @@ public class SlidingMenuTemplate  extends SlidingActivity
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "Profile", Toast.LENGTH_LONG).show();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_place, new ProfileFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new ProfileFragment()).commit();
     }
 
     public void clickedItemSupport(View view)
@@ -79,7 +76,7 @@ public class SlidingMenuTemplate  extends SlidingActivity
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "Terms & conditions", Toast.LENGTH_LONG).show();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_place, new TermsAndConditionsFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new TermsAndConditionsFragment()).commit();
     }
 
     public void clickedItemPrivacyPolicy(View view)
@@ -88,7 +85,7 @@ public class SlidingMenuTemplate  extends SlidingActivity
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "Privacy Policy", Toast.LENGTH_LONG).show();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_place, new PrivacyPolicyFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new PrivacyPolicyFragment()).commit();
     }
 
     public void clickedItemAboutThisApp(View view)
@@ -97,7 +94,7 @@ public class SlidingMenuTemplate  extends SlidingActivity
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "About This App", Toast.LENGTH_LONG).show();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_place, new AboutUsFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new AboutUsFragment()).commit();
     }
 
     /*Functionality*/

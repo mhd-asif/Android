@@ -1,4 +1,5 @@
-package com.example.saddam.petsofasiav2.fragment;
+package com.example.asif.petsofasia.fragment;
+
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,12 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.saddam.petsofasiav2.R;
+import com.example.asif.petsofasia.R;
 
-public class TermsAndConditionsFragment extends Fragment {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class PrivacyPolicyFragment extends Fragment {
 
 
-    public TermsAndConditionsFragment() {
+    public PrivacyPolicyFragment() {
         // Required empty public constructor
     }
 
@@ -20,7 +24,7 @@ public class TermsAndConditionsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_terms_and_conditions, container, false);
+        return inflater.inflate(R.layout.fragment_privacy_policy, container, false);
     }
 
 

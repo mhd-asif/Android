@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.saddam.petsofasiav2" >
+    package="com.example.asif.petsofasia" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.example.asif.petsofasia.activity.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
@@ -20,28 +20,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.LogInActivity"
+            android:name="com.example.asif.petsofasia.activity.LogInActivity"
             android:label="@string/title_activity_log_in"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name=".activity.ForgotPasswordActivity"
+            android:name="com.example.asif.petsofasia.activity.ForgotPasswordActivity"
             android:label="@string/title_activity_forgot_password"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name=".activity.CreateAccountActivity"
+            android:name="com.example.asif.petsofasia.activity.CreateAccountActivity"
             android:label="@string/title_activity_create_account"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name=".activity.UserLoggedInFragmentHolderActivity"
+            android:name="com.example.asif.petsofasia.activity.UserLoggedInFragmentHolderActivity"
             android:label="@string/title_activity_pets_for_adoption" >
         </activity>
     </application>

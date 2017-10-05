@@ -1,4 +1,4 @@
-package com.example.saddam.petsofasiav2.adapter;
+package com.example.asif.petsofasia.adapter;
 
 /**
  * Created by saddam on 29/12/2015.
@@ -8,7 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.example.saddam.petsofasiav2.fragment.PageFragment;
+import com.example.asif.petsofasia.fragment.PageFragment;
 
 public class SwipeAdapter extends FragmentStatePagerAdapter {
     public SwipeAdapter(FragmentManager fm) {

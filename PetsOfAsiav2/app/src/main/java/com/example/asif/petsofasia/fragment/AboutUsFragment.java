@@ -1,4 +1,4 @@
-package com.example.saddam.petsofasiav2.fragment;
+package com.example.asif.petsofasia.fragment;
 
 
 import android.os.Bundle;
@@ -7,15 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.saddam.petsofasiav2.R;
+import com.example.asif.petsofasia.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PrivacyPolicyFragment extends Fragment {
+public class AboutUsFragment extends Fragment {
 
 
-    public PrivacyPolicyFragment() {
+    public AboutUsFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class PrivacyPolicyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_privacy_policy, container, false);
+        return inflater.inflate(R.layout.fragment_about_us, container, false);
     }
 
 

@@ -1,4 +1,4 @@
-package com.example.saddam.petsofasiav2.fragment;
+package com.example.asif.petsofasia.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.saddam.petsofasiav2.R;
+import com.example.asif.petsofasia.R;
 
 /**
  * A simple {@link Fragment} subclass.

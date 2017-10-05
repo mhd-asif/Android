@@ -1,4 +1,4 @@
-package com.example.saddam.petsofasiav2.activity;
+package com.example.asif.petsofasia.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,19 +7,22 @@ import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.saddam.petsofasiav2.R;
+import com.example.asif.petsofasia.R;
 
 public class LogInActivity extends ActionBarActivity {
+
+    TextView forgotPassword;
+    TextView newMember;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        TextView forgotPassword = (TextView) findViewById(R.id.forgotPassword);
+        forgotPassword = (TextView) findViewById(R.id.forgotPassword);
         forgotPassword.setText(Html.fromHtml("Forgot your <u>Password?</u>"));
 
-        TextView newMember = (TextView) findViewById(R.id.newMember);
+        newMember = (TextView) findViewById(R.id.newMember);
         newMember.setText(Html.fromHtml("Not a <u>Member?</u>"));
     }
 
@@ -33,8 +36,9 @@ public class LogInActivity extends ActionBarActivity {
         startActivity(i);
     }
 
-    public void OnClickLoggedIn(View view)
+    public void OnClickLogInFB(View view)
     {
+//        Toast.makeText(this, "Log In clicked!", Toast.LENGTH_LONG).show();
         Intent i = new Intent(this, UserLoggedInFragmentHolderActivity.class);
         startActivity(i);
     }

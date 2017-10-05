@@ -1,4 +1,4 @@
-package com.example.saddam.petsofasiav2.activity;
+package com.example.asif.petsofasia.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.saddam.petsofasiav2.R;
+import com.example.asif.petsofasia.R;
 
 public class CreateAccountActivity extends AppCompatActivity
 {

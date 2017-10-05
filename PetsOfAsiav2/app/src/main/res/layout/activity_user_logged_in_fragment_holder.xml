@@ -3,21 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    <!--Default Fragment set to com.example.saddam.petsofasiav2.fragment.PetsFragment-->
 
-<!--
+    <!--Default Fragment set to com.example.saddam.petsofasiav2.fragment.PetsFragment-->
+    <!--
     <fragment
-        android:name="com.example.saddam.petsofasiav2.fragment.PetsFragment"
+        android:name="com.example.asif.petsofasia.fragment.PetsFragment"
         android:id="@+id/fragment_place"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
--->
+    -->
 
     <LinearLayout
-        android:orientation="vertical"
-        android:id="@+id/fragment_place"
+        android:id="@+id/fragment_placeholder"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     </LinearLayout>
 
