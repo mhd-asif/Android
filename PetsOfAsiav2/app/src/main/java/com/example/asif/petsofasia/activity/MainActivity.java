@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Just added a comment
+
 //        viewPager = (ViewPager)findViewById(R.id.view_pager);
 //        SwipeAdapter swipeAdapter = new SwipeAdapter(getSupportFragmentManager());
 //        viewPager.setAdapter(swipeAdapter);

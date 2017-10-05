@@ -2,31 +2,67 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_160e21806fe4fcbe2b20c34d1bbde421f69a17ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Projects\PetsOfAsiav2\library\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="473d13e19c6dc4da71e01cd22a6a65931cff6f90">
+        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_9ee6b4ed71e416bce94f85e7c0091ad9cdb15bd9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\User\.android\build-cache\35d85cd007f2234931f1e1a4d249f69f15696a90\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_6dbcaf2494b3f0441c4e816dda480d93d52e18e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Projects\PetsOfAsiav2\SlidingMenu\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a895ec52837c32a40cb3b819e3b2dc14e7958279">
+        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_51ca86e39f0bb91986bed5b0f599344e76540a64.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\User\.android\build-cache\2173ffde5b86cff769bdbe0a3e93bb157958dda8\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="e653e15e62e8a59ddd76cc7f827bf8bce38ae7bb">
-        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f19cfaaef18b218bbc322bbccd24921265b47d3e\classes.dex" />
+        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_f19cfaaef18b218bbc322bbccd24921265b47d3e.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\User\.android\build-cache\00d842d0e8dee403733abeb02a504b1fc48f00b9\output\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="3faa63e8fe2893cb2e8819423f545d1919e35c9a">
-        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_01c994b27b610c8cefaeca1efd5e1edc14a307f4\classes.dex" />
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_a95e63ad9192bf0cc8bbed8863946586bf1fead5.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\User\.android\build-cache\00d842d0e8dee403733abeb02a504b1fc48f00b9\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_12e11aae16b9866005492d1be04bb9ebd134aa54\classes.dex" />
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_86a556c48bd901d097f8e58d77af4dabb2f82676.jar" />
     </item>
 
 </items>
