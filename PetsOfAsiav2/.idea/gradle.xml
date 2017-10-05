@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/materialdrawer-4.6.3" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
