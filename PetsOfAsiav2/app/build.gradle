@@ -30,4 +30,5 @@ dependencies {
     compile project(':SlidingMenu')
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }

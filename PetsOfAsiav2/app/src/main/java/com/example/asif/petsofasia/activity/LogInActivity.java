@@ -39,7 +39,11 @@ public class LogInActivity extends ActionBarActivity {
     public void OnClickLogInFB(View view)
     {
 //        Toast.makeText(this, "Log In clicked!", Toast.LENGTH_LONG).show();
-        Intent i = new Intent(this, UserLoggedInFragmentHolderActivity.class);
+        // We will now implement with activity
+        //Intent i = new Intent(this, UserLoggedInFragmentHolderActivity.class);
+        Intent i = new Intent(this, HomeActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
+        finish();
     }
 }

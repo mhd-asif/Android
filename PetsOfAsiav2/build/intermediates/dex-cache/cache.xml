@@ -3,12 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jar="D:\Android\Projects\PetsOfAsiav2\SlidingMenu\build\intermediates\bundles\default\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_160e21806fe4fcbe2b20c34d1bbde421f69a17ae.jar" />
+        sha1="a895ec52837c32a40cb3b819e3b2dc14e7958279">
+        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_51ca86e39f0bb91986bed5b0f599344e76540a64.jar" />
     </item>
     <item
         is-multidex="false"
@@ -21,48 +21,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\User\.android\build-cache\35d85cd007f2234931f1e1a4d249f69f15696a90\output\jars\classes.jar"
+        jar="D:\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_6dbcaf2494b3f0441c4e816dda480d93d52e18e6.jar" />
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_3c9f5880fec0a880f40ecbbebb3a60ccb1f35afa.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="D:\Android\Projects\PetsOfAsiav2\SlidingMenu\build\intermediates\bundles\default\classes.jar"
+        jar="C:\Users\User\.android\build-cache\21ee3192ec17d36177472488e1524dd98627feef\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="a895ec52837c32a40cb3b819e3b2dc14e7958279">
-        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_51ca86e39f0bb91986bed5b0f599344e76540a64.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\User\.android\build-cache\2173ffde5b86cff769bdbe0a3e93bb157958dda8\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e653e15e62e8a59ddd76cc7f827bf8bce38ae7bb">
-        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_f19cfaaef18b218bbc322bbccd24921265b47d3e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\User\.android\build-cache\00d842d0e8dee403733abeb02a504b1fc48f00b9\output\jars\libs\internal_impl-23.1.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_a95e63ad9192bf0cc8bbed8863946586bf1fead5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\User\.android\build-cache\00d842d0e8dee403733abeb02a504b1fc48f00b9\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_86a556c48bd901d097f8e58d77af4dabb2f82676.jar" />
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\Android\Projects\PetsOfAsiav2\app\build\intermediates\pre-dexed\debug\classes_f4fefc1f06490a998e58305be54b24d17947c655.jar" />
     </item>
 
 </items>

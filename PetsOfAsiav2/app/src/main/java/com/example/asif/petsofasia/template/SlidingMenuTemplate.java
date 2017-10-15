@@ -1,16 +1,17 @@
 package com.example.asif.petsofasia.template;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
 import com.example.asif.petsofasia.R;
-import com.example.asif.petsofasia.fragment.AboutUsFragment;
-import com.example.asif.petsofasia.fragment.PetsFragment;
-import com.example.asif.petsofasia.fragment.PrivacyPolicyFragment;
-import com.example.asif.petsofasia.fragment.ProfileFragment;
-import com.example.asif.petsofasia.fragment.ServicesFragment;
-import com.example.asif.petsofasia.fragment.TermsAndConditionsFragment;
+import com.example.asif.petsofasia.activity.AboutUsActivity;
+import com.example.asif.petsofasia.activity.HomeActivity;
+import com.example.asif.petsofasia.activity.LogInActivity;
+import com.example.asif.petsofasia.activity.PrivacyPolicyActivity;
+import com.example.asif.petsofasia.activity.ProfileActivity;
+import com.example.asif.petsofasia.activity.TACActivity;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivity;
 
 public class SlidingMenuTemplate  extends SlidingActivity
@@ -43,7 +44,10 @@ public class SlidingMenuTemplate  extends SlidingActivity
         if(getSlidingMenu().isMenuShowing())
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "Pets", Toast.LENGTH_LONG).show();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new PetsFragment()).commit();
+        Intent i = new Intent(this, HomeActivity.class);
+        startActivity(i);
+        finish();
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new PetsFragment()).commit();
     }
 
     public void clickedItemServices(View view)
@@ -51,7 +55,10 @@ public class SlidingMenuTemplate  extends SlidingActivity
         if(getSlidingMenu().isMenuShowing())
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "Services", Toast.LENGTH_LONG).show();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new ServicesFragment()).commit();
+        Intent i = new Intent(this, HomeActivity.class);
+        startActivity(i);
+        finish();
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new ServicesFragment()).commit();
     }
 
     public void clickedItemProfile(View view)
@@ -59,8 +66,10 @@ public class SlidingMenuTemplate  extends SlidingActivity
         if(getSlidingMenu().isMenuShowing())
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "Profile", Toast.LENGTH_LONG).show();
-
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new ProfileFragment()).commit();
+        Intent i = new Intent(this, ProfileActivity.class);
+        startActivity(i);
+        finish();
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new ProfileFragment()).commit();
     }
 
     public void clickedItemSupport(View view)
@@ -75,8 +84,10 @@ public class SlidingMenuTemplate  extends SlidingActivity
         if(getSlidingMenu().isMenuShowing())
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "Terms & conditions", Toast.LENGTH_LONG).show();
-
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new TermsAndConditionsFragment()).commit();
+        Intent i = new Intent(this, TACActivity.class);
+        startActivity(i);
+        finish();
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new TermsAndConditionsFragment()).commit();
     }
 
     public void clickedItemPrivacyPolicy(View view)
@@ -84,8 +95,10 @@ public class SlidingMenuTemplate  extends SlidingActivity
         if(getSlidingMenu().isMenuShowing())
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "Privacy Policy", Toast.LENGTH_LONG).show();
-
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new PrivacyPolicyFragment()).commit();
+        Intent i = new Intent(this, PrivacyPolicyActivity.class);
+        startActivity(i);
+        finish();
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new PrivacyPolicyFragment()).commit();
     }
 
     public void clickedItemAboutThisApp(View view)
@@ -93,8 +106,10 @@ public class SlidingMenuTemplate  extends SlidingActivity
         if(getSlidingMenu().isMenuShowing())
             getSlidingMenu().toggle(true);
         //Toast.makeText(getApplicationContext(), "About This App", Toast.LENGTH_LONG).show();
-
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new AboutUsFragment()).commit();
+        Intent i = new Intent(this, AboutUsActivity.class);
+        startActivity(i);
+        finish();
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, new AboutUsFragment()).commit();
     }
 
     /*Functionality*/
@@ -109,6 +124,9 @@ public class SlidingMenuTemplate  extends SlidingActivity
     {
         /*if(getSlidingMenu().isMenuShowing())
             getSlidingMenu().toggle(true);*/
-        Toast.makeText(getApplicationContext(), "Log Out", Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), "Log Out", Toast.LENGTH_LONG).show();
+        Intent i = new Intent(this, LogInActivity.class);
+        startActivity(i);
+        finish();
     }
 }

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.asif.petsofasia" >
+    package="com.example.asif.petsofasia">
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.asif.petsofasia.activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateHidden" >
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,30 +20,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.asif.petsofasia.activity.LogInActivity"
+            android:name=".activity.LogInActivity"
             android:label="@string/title_activity_log_in"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.example.asif.petsofasia.activity.ForgotPasswordActivity"
+            android:name=".activity.ForgotPasswordActivity"
             android:label="@string/title_activity_forgot_password"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.example.asif.petsofasia.activity.CreateAccountActivity"
+            android:name=".activity.CreateAccountActivity"
             android:label="@string/title_activity_create_account"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.example.asif.petsofasia.activity.UserLoggedInFragmentHolderActivity"
-            android:label="@string/title_activity_pets_for_adoption" >
-        </activity>
+            android:name=".activity.UserLoggedInFragmentHolderActivity"
+            android:label="@string/title_activity_pets_for_adoption" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.PetDetailsActivity" />
+        <activity android:name=".activity.PetAdoptActivity" />
+        <activity android:name=".activity.TACActivity" />
+        <activity android:name=".activity.PrivacyPolicyActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
     </application>
 
 </manifest>
