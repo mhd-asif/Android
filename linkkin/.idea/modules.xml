@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlexibleCalendar/FlexibleCalendar.iml" filepath="$PROJECT_DIR$/FlexibleCalendar/FlexibleCalendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialDateandTimePicker/MaterialDateandTimePicker.iml" filepath="$PROJECT_DIR$/MaterialDateandTimePicker/MaterialDateandTimePicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PagerSlidingTabStript/PagerSlidingTabStript.iml" filepath="$PROJECT_DIR$/PagerSlidingTabStript/PagerSlidingTabStript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RippleEffect/RippleEffect.iml" filepath="$PROJECT_DIR$/RippleEffect/RippleEffect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlidingMenu/SlidingMenu.iml" filepath="$PROJECT_DIR$/SlidingMenu/SlidingMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlidingMenu_new/SlidingMenu_new.iml" filepath="$PROJECT_DIR$/SlidingMenu_new/SlidingMenu_new.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartTabLayout/SmartTabLayout.iml" filepath="$PROJECT_DIR$/SmartTabLayout/SmartTabLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circleimageview/circleimageview.iml" filepath="$PROJECT_DIR$/circleimageview/circleimageview.iml" />
       <module fileurl="file://$PROJECT_DIR$/linkkin.iml" filepath="$PROJECT_DIR$/linkkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/markdownView/markdownView.iml" filepath="$PROJECT_DIR$/markdownView/markdownView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supertooltips/supertooltips.iml" filepath="$PROJECT_DIR$/supertooltips/supertooltips.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweet alert dialog/sweet alert dialog.iml" filepath="$PROJECT_DIR$/sweet alert dialog/sweet alert dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils-v4/utils-v4.iml" filepath="$PROJECT_DIR$/utils-v4/utils-v4.iml" />
     </modules>
   </component>
 </project>

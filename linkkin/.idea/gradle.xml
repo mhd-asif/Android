@@ -6,6 +6,25 @@
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FlexibleCalendar" />
+            <option value="$PROJECT_DIR$/MaterialDateandTimePicker" />
+            <option value="$PROJECT_DIR$/PagerSlidingTabStript" />
+            <option value="$PROJECT_DIR$/RippleEffect" />
+            <option value="$PROJECT_DIR$/SlidingMenu" />
+            <option value="$PROJECT_DIR$/SlidingMenu_new" />
+            <option value="$PROJECT_DIR$/SmartTabLayout" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/circleimageview" />
+            <option value="$PROJECT_DIR$/markdownView" />
+            <option value="$PROJECT_DIR$/supertooltips" />
+            <option value="$PROJECT_DIR$/sweet alert dialog" />
+            <option value="$PROJECT_DIR$/utils-v4" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

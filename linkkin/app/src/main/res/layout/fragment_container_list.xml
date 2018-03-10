@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFFFFF"
-    tools:context="com.bscheme.linkkin.left_menu_fragment.ContainerFragment">
+    tools:context="com.asif.linkkin.left_menu_fragment.ContainerFragment">
 
     <android.support.design.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"

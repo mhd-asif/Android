@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:ripple="http://schemas.android.com/apk/res-auto"
     android:background="@color/primary_color"
-    tools:context="com.bscheme.linkkin.AppPinActivity">
+    tools:context="com.asif.linkkin.AppPinActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

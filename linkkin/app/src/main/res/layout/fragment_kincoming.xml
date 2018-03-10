@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.bscheme.linkkin.left_menu_fragment.KincomingFragment">
+    tools:context="com.asif.linkkin.left_menu_fragment.KincomingFragment">
 
 
     <ScrollView

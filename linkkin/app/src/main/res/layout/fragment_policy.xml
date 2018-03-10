@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#f4f4f4"
-    tools:context="com.bscheme.linkkin.fragment.PolicyFragment">
+    tools:context="com.asif.linkkin.fragment.PolicyFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rcl_policy"

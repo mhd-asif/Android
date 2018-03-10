@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bscheme.linkkin.left_menu_fragment.KinvironmentFragment">
+    tools:context="com.asif.linkkin.left_menu_fragment.KinvironmentFragment">
 
     <android.support.design.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"

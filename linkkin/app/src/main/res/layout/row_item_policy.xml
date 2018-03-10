@@ -46,7 +46,7 @@
 
                 </RelativeLayout>
 
-                <com.bscheme.linkkin.widgets.ExpandableTextView
+                <com.asif.linkkin.widgets.ExpandableTextView
                     android:id="@+id/tv_policy_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -32,7 +32,7 @@
                 android:paddingLeft="10dp"
                 android:padding="10dp">
 
-                <com.bscheme.linkkin.widgets.ExpandableTextView
+                <com.asif.linkkin.widgets.ExpandableTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ADMIN"
@@ -43,7 +43,7 @@
                     android:layout_marginBottom="5dp"
                     android:padding="2dp" />
 
-                <com.bscheme.linkkin.widgets.ExpandableTextView
+                <com.asif.linkkin.widgets.ExpandableTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"

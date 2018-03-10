@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f4f4f4"
-    tools:context="com.bscheme.linkkin.left_menu_fragment.ContainerFragment">
+    tools:context="com.asif.linkkin.left_menu_fragment.ContainerFragment">
 
 
     <android.support.design.widget.CoordinatorLayout

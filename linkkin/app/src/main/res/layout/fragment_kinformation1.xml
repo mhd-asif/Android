@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.bscheme.linkkin.left_menu_fragment.KinformationFragment1">
+    tools:context="com.asif.linkkin.left_menu_fragment.KinformationFragment1">
     <FrameLayout
         android:id="@+id/tab"
         android:layout_width="match_parent"
