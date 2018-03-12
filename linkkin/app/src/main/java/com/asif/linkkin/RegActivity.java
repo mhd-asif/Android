@@ -199,8 +199,7 @@ public class RegActivity extends AppCompatActivity implements TextView.OnEditorA
     }
 
 
-    private void registerUser()
-    {
+    private void registerUser() {
         SharedPreferences prefNotify=getSharedPreferences("Push_Notification",MODE_PRIVATE);
         regId=prefNotify.getString("reg_id","");
 
@@ -216,31 +215,6 @@ public class RegActivity extends AppCompatActivity implements TextView.OnEditorA
             new getRes().execute();
         }
        // new getRes().execute();
-    }
-
-
-
-    private void saveKindividualData() {
-        try {
-            String path_kindividual=getCacheDir().getAbsolutePath()+"/"+getResources().getString(R.string.file_kindividual);
-            File file = new File(path_kindividual);
-            file.createNewFile();
-            new getKindividualInfos().execute();
-        }
-        catch (Exception e) {
-            Log.e("file_creation","+e");
-        }
-
-    }
-
-    private void startNextActivity() {
-        if(mDialog!=null&&mDialog.isShowing()) mDialog.dismiss();
-
-        Intent intent = new Intent(RegActivity.this,MainActivity.class);
-       // intent.putExtra("type","");
-        //intent.putExtra("category", "");
-        startActivity(intent);
-        finish();
     }
 
 
@@ -294,14 +268,16 @@ public class RegActivity extends AppCompatActivity implements TextView.OnEditorA
         protected String doInBackground(String... params) {
             ConnectionHelper ch = new ConnectionHelper();
             //ch.createConnection(Urls.URL_COMMON, "POST");
-            ch.createConnection(Urls.URL_COMMON, "GET");
+            ch.createConnection(Urls.URL_TEST, "GET");
 
-           /* Uri.Builder builder = new Uri.Builder()
-                    .appendQueryParameter("action","user_login")
-                    .appendQueryParameter("user_id", employeeId)
-                    .appendQueryParameter("password", password)
-                    .appendQueryParameter("gcm_id",regId);
-            ch.addData(builder); */
+
+            /*Uri.Builder builder = new Uri.Builder()
+//                    .appendQueryParameter("action","user_login")
+//                    .appendQueryParameter("user_id", employeeId)
+//                    .appendQueryParameter("password", password)
+//                    .appendQueryParameter("gcm_id",regId);
+                    .appendQueryParameter("id", "2a514d82ee272080231aa3830c482fc6");
+            ch.addData(builder);*/
 
            // employeeId=params[0];
 
@@ -354,7 +330,7 @@ public class RegActivity extends AppCompatActivity implements TextView.OnEditorA
             dir.mkdir();
 
             String path_kindom = getCacheDir().getAbsolutePath()+"/" + getResources().getString(R.string.file_kindom);
-            Log.e("catch path: ", path_kindom);
+            Log.e("cache path: ", path_kindom);
 
             File file = new File(path_kindom);
             file.createNewFile();
@@ -383,11 +359,13 @@ public class RegActivity extends AppCompatActivity implements TextView.OnEditorA
             return ch.getDataFromUrlByGET(Urls.KINDOM_LIST);   */
 
             ConnectionHelper helper = new ConnectionHelper();
-            helper.createConnection(SharedDataSaveLoad.load(RegActivity.this,getResources().getString(R.string.shared_pref_api_url)), "POST");
-            helper.addData(new Uri.Builder()
+            String sharePrefApiUrl = SharedDataSaveLoad.load(RegActivity.this,getResources().getString(R.string.shared_pref_api_url));
+            Log.e("SharedPrefApiUrl: " , sharePrefApiUrl);
+            helper.createConnection(sharePrefApiUrl, "GET");
+            /*helper.addData(new Uri.Builder()
                     .appendQueryParameter("action", "get_kindominfo")
                     .appendQueryParameter("blog_id", SharedDataSaveLoad.load(RegActivity.this, getResources().getString(R.string.shared_pref_web_id)) )
-            );
+            );*/
 
             return helper.getResponse();
         }
@@ -396,6 +374,7 @@ public class RegActivity extends AppCompatActivity implements TextView.OnEditorA
         protected void onPostExecute(String response) {
             super.onPostExecute(response);
             //mDialog.dismiss();
+            Log.e("Kindom response: ", "" + response);
 
             String path_kindom = getCacheDir().getAbsolutePath()+"/"+getResources().getString(R.string.file_kindom);
             File file = new File(path_kindom);
@@ -422,9 +401,19 @@ public class RegActivity extends AppCompatActivity implements TextView.OnEditorA
                 }
             }
             else saveKindividualData();
-
         }
+    }
 
+    private void saveKindividualData() {
+        try {
+            String path_kindividual=getCacheDir().getAbsolutePath()+"/"+getResources().getString(R.string.file_kindividual);
+            File file = new File(path_kindividual);
+            file.createNewFile();
+            new getKindividualInfos().execute();
+        }
+        catch (Exception e) {
+            Log.e("file_creation","+e");
+        }
     }
 
     private class getKindividualInfos extends AsyncTask<String,Void,String> {
@@ -435,18 +424,18 @@ public class RegActivity extends AppCompatActivity implements TextView.OnEditorA
            // return ch.getDataFromUrlByGET(Urls.KINDIVIDUAL_INFO + "/" +employeeId);
 
             ConnectionHelper helper = new ConnectionHelper();
-            helper.createConnection(Urls.URL_COMMON, "POST");
-            helper.addData(new Uri.Builder().appendQueryParameter("action", "get_user_info")
+            helper.createConnection(Urls.URL_KINDIVIDUAL, "GET");
+            /*helper.addData(new Uri.Builder().appendQueryParameter("action", "get_user_info")
                     .appendQueryParameter("user_id", SharedDataSaveLoad.load(RegActivity.this, getResources().getString(R.string.shared_pref_employee_id)))
-                    .appendQueryParameter("blog_id", SharedDataSaveLoad.load(RegActivity.this, getResources().getString(R.string.shared_pref_web_id))));
+                    .appendQueryParameter("blog_id", SharedDataSaveLoad.load(RegActivity.this, getResources().getString(R.string.shared_pref_web_id))));*/
+
             return helper.getResponse();
         }
 
         @Override
         protected void onPostExecute(String response) {
             super.onPostExecute(response);
-
-            //Log.i("response kindividual", s);
+            Log.e("Kindividual response: ", "" + response);
 
             String path_kindom = getCacheDir().getAbsolutePath()+"/"+getResources().getString(R.string.file_kindividual);
             File file = new File(path_kindom);
@@ -472,11 +461,20 @@ public class RegActivity extends AppCompatActivity implements TextView.OnEditorA
                     }
                 }
             }
+
             else startNextActivity();
-
-
         }
+    }
 
+
+    private void startNextActivity() {
+        if(mDialog!=null&&mDialog.isShowing()) mDialog.dismiss();
+
+        Intent intent = new Intent(RegActivity.this,MainActivity.class);
+        // intent.putExtra("type","");
+        //intent.putExtra("category", "");
+        startActivity(intent);
+        finish();
     }
 
 }

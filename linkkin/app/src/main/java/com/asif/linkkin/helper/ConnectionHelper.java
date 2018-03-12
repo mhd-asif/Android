@@ -34,7 +34,7 @@ public class ConnectionHelper {
             httpURLConnection = (HttpURLConnection) (new URL(mUrl)).openConnection();
             httpURLConnection.setUseCaches(false);
             httpURLConnection.setDoInput(true);
-            httpURLConnection.setDoOutput(true);
+//            httpURLConnection.setDoOutput(true);
             httpURLConnection.setRequestMethod(mRequestType);
 
             httpURLConnection.connect();
@@ -65,19 +65,27 @@ public class ConnectionHelper {
         InputStream is = null;
         StringBuilder buffer = null;
         try {
-            is = httpURLConnection.getInputStream();
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
-            buffer = new StringBuilder();
 
-            String line = null;
-            while ((line = bufferedReader.readLine()) != null) {
-                buffer.append(line + "\n");
+            int responseCode = httpURLConnection.getResponseCode(); //can call this instead of con.connect()
+            if (responseCode >= 400 && responseCode <= 499) {
+                Log.e("Bad authentication: ", "Alas!" + responseCode); //provide a more meaningful exception message
             }
-            return buffer.toString();
+            else {
+                is = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
+                buffer = new StringBuilder();
+
+                String line = null;
+                while ((line = bufferedReader.readLine()) != null) {
+                    buffer.append(line + "\n");
+                }
+                return buffer.toString();
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }finally {
-            httpURLConnection.disconnect();
+            if (httpURLConnection != null) httpURLConnection.disconnect();
         }
 
         return null;
